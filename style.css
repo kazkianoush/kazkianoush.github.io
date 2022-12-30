@@ -1,0 +1,53 @@
+
+body {
+	background-color: white;
+	color: black;
+}
+
+h1 ,h2{
+	font-family: "Comic Sans MS";
+  color: black;
+  background-color: white;
+  text-align: center;
+
+}
+
+h2 {
+	font-family: "Courier New";\
+  color: black;
+  background-color: white;
+}
+#first{
+  visibility: hidden;
+}
+tr{
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+ul{
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  border-bottom: 10px solid;
+  border-color: red;
+}
+.content {
+	background-color: RGBA(33,66,99, 1);
+	margin: 2%;
+	padding: 2%;
+	border: 20px solid yellow;
+}
+p{
+  color: black;
+  background-color: white;
+  margin: 1%;
+}
+.JawTitan{
+	background-color: RGBA(33,66,99, 1);
+	color: black;
+	margin: 2%;
+	padding: 2%;
+
+}
