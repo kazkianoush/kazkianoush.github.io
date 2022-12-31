@@ -116,3 +116,132 @@ p:hover{
   flex-wrap: wrap;
   align-items: center;
 }
+
+@media (orientation: portrait ) {
+
+  #background-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .bg-image{
+    position: relative;
+    background-image: url("weather.jpeg");
+    padding: 27.5%;
+    background-size: 50%;
+
+    -webkit-filter: blur(8px);
+
+
+    height: 100%;
+
+
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    margin:-5px;
+  }
+
+  #sunup{
+    width: 50px;
+    height: 50px;
+  }
+
+  #sundown{
+    width: 50px;
+    height: 50px;
+  }
+
+  p:hover{
+    background-color: rgba(200,200,200,0.2);
+    transition-duration: 0.5s;
+  }
+  #city {
+      border-radius: 18px;
+      padding: 10px;
+      width: 600px;
+      height: 60px;
+      font-size: 2rem;
+      /* display: inline-block;
+      margin-left: 50px; */
+
+
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+  #button{
+    border-radius: 18px;
+    font-size: 2rem;
+
+  }
+  #country{
+    border-radius: 18px;
+    padding: 10px;
+    width: 600px;
+    height: 60px;
+    font-size: 2rem;
+
+    /* display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+  }
+  p {
+    font-size: 60px;
+  }
+
+  .dropdown{
+     background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+     color: white;
+
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; */
+
+    border-radius: 5px;
+
+    background-position: center;
+    font-weight: bold;
+    border: 5px solid #f1f1f1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 60%;
+    padding-top: 100px;
+    padding: 20px;
+    text-align: center;
+
+  }
+
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+  .custom-select{
+    /* display: inline-block; */
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+}
