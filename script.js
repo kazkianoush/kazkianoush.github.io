@@ -1,10 +1,10 @@
 //
-// function runscript(){
+// function submit(){
 // let web = "https://api.weatherbit.io/v2.0/current?&city=";
 //
-// let city = document.getElementById("movie").value;
+// let city = document.getElementById("city").value;
 //
-// let key = "&key=9e83260ac2b644879375fc9c1a25613d";
+// let key = "&key=477bd6d8bdb84203ab5485442834cf3f";
 //
 // let url = web + city + key;
 //
@@ -60,7 +60,7 @@ if(icon == "c04d" || icon == "a01d" || icon == "a02d" || icon == "a03d" || icon 
 }
 if(icon[3] == "n"){
   $("#background-video").attr("src", "night.mp4");
-  console.log(document.getElementById(background-video).value());
+  // console.log(document.getElementById('background-video').value());
   icon = "c04d";
 }
 if(icon[0] == "r" || icon[0] == "f"){
@@ -97,10 +97,10 @@ function displayResults2(_links){
 function submit(){
 
 let baseURL = "https://api.weatherbit.io/v2.0/current?";
-let key = "&key=" + "9e83260ac2b644879375fc9c1a25613d";
+let key = "&key=" + "477bd6d8bdb84203ab5485442834cf3f";
 let city =  "&city=" + $("#city").val();
 let country = "&country=" + $("#country").val();
-let url = baseURL + key + city + country;
+let url = baseURL + city + country + key;
 
 let picurl = "https://api.teleport.org/api/urban_areas/slug:";
 let citypic = $("#city").val() + "/images/";
