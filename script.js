@@ -98,12 +98,12 @@ function submit(){
 
 let baseURL = "https://api.weatherbit.io/v2.0/current?";
 let key = "&key=" + "477bd6d8bdb84203ab5485442834cf3f";
-let city =  "&city=" + $("#city").val();
-let country = "&country=" + $("#country").val();
+let city =  "&city=" + $("#city").val().toLowerCase();
+let country = "&country=" + $("#country").val().toLowerCase();
 let url = baseURL + city + country + key;
 
 let picurl = "https://api.teleport.org/api/urban_areas/slug:";
-let citypic = $("#city").val() + "/images/";
+let citypic = $("#city").val().toLowerCase() + "/images/";
 
 let urlpic = picurl + citypic;
 
