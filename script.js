@@ -97,7 +97,7 @@ function displayResults2(_links){
 function submit(){
 
 let baseURL = "https://api.weatherbit.io/v2.0/current?";
-let key = "&key=" + "477bd6d8bdb84203ab5485442834cf3f";
+let key = "&key=" + "cafd9445496a4dd5bb52a785728d0a34";
 let city =  "&city=" + $("#city").val().toLowerCase();
 let country = "&country=" + $("#country").val().toLowerCase();
 let url = baseURL + city + country + key;
