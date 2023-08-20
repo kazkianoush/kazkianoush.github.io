@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.kasrakianoush.kasrapp",
+    "sha256_cert_fingerprints":
+    ["8D:92:64:0A:20:E6:95:2C:A6:AA:79:B6:27:9D:01:22:4C:A4:D1:58:10:89:6A:30:DA:F5:09:40:70:5C:3E:2C"]
+  }
+}]
