@@ -41,8 +41,8 @@ let description = data.data[0].weather.description;
 let datetime = data.data[0].datetime;
 let country = data.data[0].country_code;
 let icon = data.data[0].weather.icon;
-let sunrise = data.data[0].sunrise;
-let sunset = data.data[0].sunset;
+let sunrise = data.data[0].sunrise-7;
+let sunset = data.data[0].sunset-7;
 
 // if(parseInt(sunset) > 12){
 //   sunset = parseInt(sunset) - 12 + " pm";
