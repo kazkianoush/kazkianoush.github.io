@@ -44,16 +44,16 @@ let icon = data.data[0].weather.icon;
 let sunrise = data.data[0].sunrise;
 let sunset = data.data[0].sunset;
 
-if(parseInt(sunset) > 12){
-  sunset = parseInt(sunset) - 12 + " pm";
-}else{
-  sunset = sunset + " am";
-}
-if(parseInt(sunrise) < 12){
-  sunrise = parseInt(sunrise) + " am";
-}else{
-  sunrise = parseInt(sunrise)-12 +" pm";
-}
+// if(parseInt(sunset) > 12){
+//   sunset = parseInt(sunset) - 12 + " pm";
+// }else{
+//   sunset = sunset + " am";
+// }
+// if(parseInt(sunrise) < 12){
+//   sunrise = parseInt(sunrise) + " am";
+// }else{
+//   sunrise = parseInt(sunrise)-12 +" pm";
+// }
 
 if(icon == "c04d" || icon == "a01d" || icon == "a02d" || icon == "a03d" || icon == "a04d" || icon == "a05d" || icon == "a06d" || icon == "c03d" || icon == "c04d"){
   $("#background-video").attr("src", "allcloudy.mp4");
