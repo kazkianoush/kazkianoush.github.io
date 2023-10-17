@@ -41,8 +41,46 @@ let description = data.data[0].weather.description;
 let datetime = data.data[0].datetime;
 let country = data.data[0].country_code;
 let icon = data.data[0].weather.icon;
-let sunrise = (data.data[0].sunrise-7);
-let sunset = (data.data[0].sunset-7);
+let sunrise = (data.data[0].sunrise);
+let sunset = (data.data[0].sunset);
+
+   // Extract the hours and minutes
+const [shours, sminutes] = sunrise.split(':').map(Number);
+
+// Calculate the total hours (24-hour format)
+const stotalHours = shours;
+
+// Subtract 7 hours
+let snewHours = stotalHours - 7;
+
+// Handle negative hour values (e.g., when subtracting 7 from 02:00)
+if (snewHours < 0) {
+  snewHours += 24; // Adding 24 hours to get the correct time in 24-hour format
+}
+
+// Format the new hours and minutes
+sunrise= `${snewHours < 10 ? '0' : ''}${snewHours}:${sminutes < 10 ? '0' : ''}${sminutes}`; 
+
+
+  
+  // Extract the hours and minutes
+const [hours, minutes] = sunset.split(':').map(Number);
+
+// Calculate the total hours (24-hour format)
+const totalHours = hours;
+
+// Subtract 7 hours
+let newHours = totalHours - 7;
+
+// Handle negative hour values (e.g., when subtracting 7 from 02:00)
+if (newHours < 0) {
+  newHours += 24; // Adding 24 hours to get the correct time in 24-hour format
+}
+
+// Format the new hours and minutes
+sunset= `${newHours < 10 ? '0' : ''}${newHours}:${minutes < 10 ? '0' : ''}${minutes}`;
+sunrise += "(PDT)";
+sunset += "(PDT)";
 
 // if(parseInt(sunset) > 12){
 //   sunset = parseInt(sunset) - 12 + " pm";
