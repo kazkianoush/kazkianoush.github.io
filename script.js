@@ -153,7 +153,7 @@ $("#raw").html(JSON.stringify(data));
 displayResults(data);
 });
 
-$.get(urlpic, function(_links) {
+$.get(imageUrl, function(_links) {
 $("#daw").html(JSON.stringify(_links));
 displayResults2(_links);
 });
