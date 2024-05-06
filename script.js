@@ -140,10 +140,13 @@ let city =  "&city=" + $("#city").val().toLowerCase();
 let country = "&country=" + $("#country").val().toLowerCase();
 let url = baseURL + city + country + key;
 
-let picurl = "https://api.teleport.org/api/urban_areas/slug:";
-let citypic = $("#city").val().toLowerCase() + "/images/";
+let imageUrl = `https://cors-anywhere.herokuapp.com/https://api.teleport.org/api/urban_areas/slug:${city}/images/`;
 
-let urlpic = picurl + citypic;
+
+// let picurl = "https://api.teleport.org/api/urban_areas/slug:";
+// let citypic = $("#city").val().toLowerCase() + "/images/";
+
+// let urlpic = picurl + citypic;
 
 $.get(url, function(data) {
 $("#raw").html(JSON.stringify(data));
